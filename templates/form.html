@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"
+    />
+  </head>
+  <body>
+    <button onclick="window.location.href='../index.html'" class="btn-volver">Volver al inicio</button>
+    <section class="form-contact">
+      <img src="../assets/imgs/Logo.jpg" alt="Logo del canal" />
+      <header>
+        <h1>Formulario de Contacto</h1>
+      </header>
+      <form id="formulario" action="../templates/envio.html" class="contact" method="get">
+        <h2>
+          Rellene sus datos correctamente y le contestaremos lo más rapido
+          posible.
+        </h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+
+        <label for="correo">Correo Electrónico</label>
+        <input type="text" name="correo" id="correo" />
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="telefono" />
+
+        <label for="">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="35" rows="10"></textarea>
+        <input type="submit" id="enviar" value="Enviar" />
+
+        <ul id="errores"></ul>
+      </form>
+    </section>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

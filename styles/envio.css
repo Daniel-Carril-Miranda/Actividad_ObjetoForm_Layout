@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+body {
+    background-color: #9ca53a;
+    font-family: Kanit, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 70vh; 
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moverImagen{
+    from{
+        transform: translateX(-100); /*si lo quieres del reves
+        metes -100 aqui y abajo 1000%*/
+    }
+    to{
+        transform: translateX(1000%);
+    }
+}
+#mimoto {
+    width: 150px;
+    height: 100px;
+    background-image: url('../assets/imgs/logo.jpg');
+    background-size:cover;
+    animation: moverImagen 2s linear infinite;
+}
