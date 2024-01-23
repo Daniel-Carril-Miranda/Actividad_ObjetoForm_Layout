@@ -1,3 +1,6 @@
+// Autor: Daniel Carril Miranda
+// GitHub: 
+
 document.addEventListener("DOMContentLoaded", function () {
     const hamburguerBtn = document.querySelector(".hamburguer-btn");
     const navLinks = document.querySelector(".nav-links");
